@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Commodore;
+  src: url('../assets/fonts/commodore-pixelized.ttf');
+  font-weight:400;
+  font-weight:normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
