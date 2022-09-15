@@ -13,7 +13,17 @@
   <!-- Libraries -->
   <script src="js/libraries/phaser-arcade-physics.min.js"></script>
 
+
+
   <!-- My script(s) -->
+  <!-- For handling timeouts in a gallery setting -->
+  <script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const TIMEOUT = urlParams.get('timeout') || false; // In seconds
+  console.log(TIMEOUT);
+  </script>
+
   <script src="js/Boot.js"></script>
   <script src="js/Preloader.js"></script>
   <script src="js/Sisyphus.js"></script>

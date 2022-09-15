@@ -208,8 +208,10 @@ let Tantalus = new Phaser.Class({
 
     this.appleClicks = 0;
     this.waterClicks = 0;
+    this.idle = 0;
     this.input.on('pointerdown', (pointer) => {
       if (this.inputEnabled) {
+        this.idle = 0;
         if (pointer.y < this.game.canvas.height / 2) {
           this.appleClicks++;
         } else if (pointer.y > this.game.canvas.height / 2) {
@@ -217,7 +219,17 @@ let Tantalus = new Phaser.Class({
         }
       }
     });
-    setInterval(() => {
+
+    let interval = setInterval(() => {
+      this.idle++;
+      if (TIMEOUT && this.idle > TIMEOUT) {
+        clearInterval(interval);
+        clearInterval(this.inputInterval);
+        this.scene.start(`menu`);
+      }
+    }, 1000);
+
+    this.inputInterval = setInterval(() => {
       // console.log(this.appleClicks,this.waterClicks);
       if (this.appleClicks > 1 && this.inputEnabled) {
         this.appleSuccess = true;

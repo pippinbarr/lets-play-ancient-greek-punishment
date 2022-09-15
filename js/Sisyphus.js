@@ -105,10 +105,22 @@ let Sisyphus = new Phaser.Class({
     // this.children.getChildren().forEach((c) => { c.alpha = 0.2 });
 
     this.clicks = 0;
+    this.idle = 0;
     this.input.on('pointerdown', () => {
       if (this.inputEnabled) this.clicks++;
+      this.idle = 0;
     });
-    setInterval(() => {
+
+    let interval = setInterval(() => {
+      this.idle++;
+      if (TIMEOUT && this.idle > TIMEOUT) {
+        clearInterval(interval);
+        clearInterval(this.inputInterval);
+        this.scene.start(`menu`);
+      }
+    }, 1000);
+
+    this.inputInterval = setInterval(() => {
       if (this.clicks > 1 && this.inputEnabled) {
         this.inputSuccess = true;
         this.instructionsText.visible = false;
