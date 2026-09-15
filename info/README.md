@@ -16,7 +16,7 @@ The new playable version has been ported to JavaScript using the equally excelle
 
 ## Press
 
-* [BoingBoing](http://boingboing.net/2012/01/03/ancient-greek-punishments-the.html)
+* [Boing Boing](http://boingboing.net/2012/01/03/ancient-greek-punishments-the.html)
 * [The Verge](http://www.theverge.com/gaming/2012/1/3/2680481/ancient-greek-punishment-video-game)
 * [Edge](http://www.edge-online.com/features/friday-game-lets-play-ancient-greek-punishment)
 * [Open Culture](http://www.openculture.com/2012/01/ancient_greek_punishments_the_retro_video_game.html)
@@ -24,6 +24,7 @@ The new playable version has been ported to JavaScript using the equally excelle
 * [Kotaku](http://kotaku.com/5873932/these-greek-mythology-flash-games-are-eternal-torture)
 * [Rock, Paper, Shotgun](http://www.rockpapershotgun.com/2012/01/09/rack-and-yield-ancient-greek-punishment/)
 * [Slate](http://www.slate.com/articles/technology/bitwise/2014/03/dark_souls_ii_the_rise_of_masocore_gaming.2.html)
+- [Unwinnable](https://unwinnable.com/2012/02/09/the-value-of-lets-play-ancient-greek-punishment/)
 
 ## Exhibitions
 
